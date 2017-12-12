@@ -2,37 +2,50 @@
 <html>
 <head>
 <style>
-.kwad
+div.relative {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    border: 3px solid #73AD21;
+} 
+
+div.absolutel {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 150px;
+    height: 400px;
+    background:grey;
+    z-index: -1;
+}
+
+div.absoluter {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 150px;
+    height: 400px;
+   	background:grey;
+    z-index: -1;
+}
+
+.sword
 {
-	width: 30px;
-    height: 30px;
-    background-color: grey;
-    position:absolute;
+	position: absolution;
+    top: 30px;
+    left: 
 }
+
 </style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-	setTimeout(function(){
-    $(".kwad").hide();});
-    $("#show").click(function(){
-        $(".kwad").show();
-    });
-    //$(".kwad").click(function(){
-       // $(".kwad").animate({left: '250px'});
-    //});
-    x = $(".kwad").click(function getRndInteger(min, max) {
-    return Math.floor(Math.random() * 4);
-}
-    });
-});
-</script>
 </head>
 <body>
 
-<div class="kwad"></div>
-
-<button id="show">Show</button>
+<div class="relative">
+	<div class="sword"></div>
+    <div class="absolutel"></div>
+    <div class="absoluter"></div>
+</div>
 
 </body>
 </html>
+
